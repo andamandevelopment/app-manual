@@ -59,29 +59,79 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-primary-fixed: var(--primary-fixed);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+  --color-secondary-fixed: var(--secondary-fixed);
+  --color-on-secondary-fixed: var(--on-secondary-fixed);
+  --color-surface: var(--surface);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-outline-variant: var(--outline-variant);
+  --color-on-primary: var(--primary-foreground);
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  /* Andaman GPS — Material 3 navy/orange palette */
+  --background: oklch(0.985 0.012 255);            /* #f9f9ff */
+  --foreground: oklch(0.24 0.05 260);              /* #111c2c */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.24 0.05 260);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --popover-foreground: oklch(0.24 0.05 260);
+  --primary: oklch(0.36 0.12 258);                 /* #003770 navy */
+  --primary-foreground: oklch(1 0 0);
+  --primary-container: oklch(0.43 0.13 258);       /* #1b4e8f */
+  --on-primary-container: oklch(0.82 0.09 258);    /* #9ec1ff */
+  --primary-fixed: oklch(0.92 0.04 258);           /* #d6e3ff */
+  --primary-fixed-dim: oklch(0.82 0.09 258);
+  --secondary: oklch(0.55 0.19 38);                /* #ad3300 */
+  --secondary-foreground: oklch(1 0 0);
+  --secondary-container: oklch(0.68 0.21 38);      /* #ff642d */
+  --on-secondary-container: oklch(0.32 0.15 38);   /* #5a1600 */
+  --secondary-fixed: oklch(0.92 0.05 38);          /* #ffdbd0 */
+  --on-secondary-fixed: oklch(0.18 0.09 38);       /* #3a0b00 */
+  --muted: oklch(0.94 0.02 258);
+  --muted-foreground: oklch(0.45 0.03 258);        /* #424750 */
+  --accent: oklch(0.94 0.02 258);
+  --accent-foreground: oklch(0.36 0.12 258);
+  --destructive: oklch(0.55 0.22 28);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.83 0.015 258);                 /* #c3c6d2 */
+  --input: oklch(0.83 0.015 258);
+  --ring: oklch(0.55 0.04 258);
+  --surface: oklch(0.985 0.012 255);
+  --surface-container-lowest: oklch(1 0 0);
+  --surface-container-low: oklch(0.96 0.015 258);  /* #f0f3ff */
+  --surface-container: oklch(0.93 0.025 258);      /* #e7eeff */
+  --surface-container-high: oklch(0.91 0.03 258);  /* #dee8ff */
+  --surface-container-highest: oklch(0.88 0.035 258); /* #d8e3fa */
+  --on-surface-variant: oklch(0.45 0.03 258);
+  --outline-variant: oklch(0.83 0.015 258);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+  --color-secondary-fixed: var(--secondary-fixed);
+  --color-on-secondary-fixed: var(--on-secondary-fixed);
+  --color-surface: var(--surface);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-outline-variant: var(--outline-variant);
+  --color-primary-fixed: var(--primary-fixed);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +190,15 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+  }
+
+  .glass-card {
+    background: color-mix(in oklab, white 95%, transparent);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--outline-variant);
+  }
+  .zebra-stripes > div:nth-child(even) {
+    background-color: color-mix(in oklab, var(--surface-container) 40%, transparent);
   }
 }
