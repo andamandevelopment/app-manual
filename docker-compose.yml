@@ -1,0 +1,11 @@
+services:
+  web:
+    image: application-manual
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /etc/localtime:/etc/localtime
+    ports:
+      - "8381:80"
+    restart: always
