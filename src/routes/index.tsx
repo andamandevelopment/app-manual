@@ -1,23 +1,34 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import AddLineOaBanner from "../images/add-lineoa.png";
+import AppleLogo from "../images/apple-logo.png";
+import PlayStoreLogo from "../images/playtore-logo.png";
+import ContactImage from "../images/screen/Contact.png";
+import GeofencesImage from "../images/screen/Geofences.png";
+import HistoryImage from "../images/screen/History.png";
+import HomeImage from "../images/screen/Home.png";
+import LoginImage from "../images/screen/Login.png";
+import MapCardsVehiclesImage from "../images/screen/Map_Cards_Vehicles.png";
+import MapScreenImage from "../images/screen/Map_Screen.png";
+import NotificationsImage from "../images/screen/Notifications.png";
+import ReportSummaryImage from "../images/screen/Report_Summary.png";
+import ReportTemperatureImage from "../images/screen/Report_Temperture.png";
+import ReportTripsImage from "../images/screen/Report_Trips.png";
+import VehicleDetailImage from "../images/screen/Vehicle_Detail.png";
+import VehicleSensorsImage from "../images/screen/Vehicle_Sensors.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Andaman GPS Manual — Fleet Telematics Documentation" },
+      { title: "คู่มือ Andaman GPS — เอกสารระบบติดตามยานพาหนะ" },
       {
         name: "description",
         content:
-          "Complete user manual for Andaman GPS: real-time tracking, playback, reports, fuel monitoring and driver behavior analytics.",
+          "คู่มือการใช้งาน Andaman GPS แบบครบถ้วน: ติดตามเรียลไทม์, ย้อนดูเส้นทาง, รายงาน, ตรวจสอบน้ำมัน และวิเคราะห์พฤติกรรมผู้ขับขี่",
       },
-      { property: "og:title", content: "Andaman GPS Manual" },
-      { property: "og:description", content: "Fleet telematics platform documentation." },
+      { property: "og:title", content: "คู่มือ Andaman GPS" },
+      { property: "og:description", content: "เอกสารแพลตฟอร์มติดตามยานพาหนะ" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
-      },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
@@ -28,24 +39,34 @@ export const Route = createFileRoute("/")({
 });
 
 const IMG = {
-  login:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuDRWUfdXJjQkvgnZ_LIXwZcNBm9_u3K4I06Pl_UQxoqoMg8ky0uskM5tMseiYbnNzEa5sPQnGwWn8pBQlMIa5SKt_xVZwmDtBo28TtS_SWu93U3owMo_Qfh9eX1Mu9NIfvjEQ__7n05FV3QjoBW2ERuKJneMR7BNMVzCLmbdal1tLvM_gXbnVfRK-2lcinkYShPWaJKmaiDtBhMaJTVboXZABloGEdXi0itc5NzLYrKRhxPHXBkqcDfnqa0kk8yE_Udi0M8Z-fUMRA",
-  map: "https://lh3.googleusercontent.com/aida-public/AB6AXuBGuFmNGaF9W3z6vJ_9B_HPKCwLq5eRIcUfYHCtwheUGvSnFv6HTBSmuNw0Sod7fiTZ4kPQqj-sCROab2SIgID0eaRRNlt3DPNd_1Yim2kiVQXZPfelPOOe-w7Wu-1Qck35s2DEGJz0xHlHXTMIcoFuFZFPAxAXmUFOCxjExGgQthjRJJUF_q2_3IYGBMx9Rhq0VKMrwZZajnHK-4GT4JJJO-SpIvu1lOhJx0bvq82eA4AYNQjtd0GyJglah3O0Jkjk2l_Agvvdqb8",
-  info: "https://lh3.googleusercontent.com/aida-public/AB6AXuBLYbhW3NLNQRR3DasuCrz2cjdee5Ri988S_TxZgtz0nXSVfL_om7bgWgwx-MO13RJ3_bL9mxI7RbGWlPJEFqKFNvxOhz7CLfpFFAaWoG28EwcYtKJDXLcRh9LFqzIU1rz0OFTQZH-w34-Rao5wXHGRA3RMbr7V6N1jpf7lDPT5t7T3WWVnjSnm9rhgLGR1XiNOw8UvJ00UowIKBsYqc1FEvtB4ZSbGq-ZpyFe1N4InKB_XWMwG1C0Tf6QzccgCabP_Bim6wMVl1yk",
-  fleet:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuB9FnYdtI9UJ0e_nB4QqsPAVybFaIJGq532_oBt5K9q_UN87RL0DuXBFMtUlSUUBrucO5Tk_j7QZYSFG558l9Ioe4rCjKV4mRdXJUpH5flEEbbgbxabwMmd1RZa8KhZTL1T5BO6wbSUoTRlkS79AtfDBdfboIWDHfN6DdXPNvpOB7x8PnrKQkYdvn3rAD8TFZHtWXGA54pa6e9AtIKgrIAj8GB2c7NexbuA0YhqtWHOhzASOInVMsh3JssXNR28MChPmSLrqufnkqQ",
-  playback:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuDOo0To5EQgDDsVMnfBLrIY6cGI0YMdEtR8d3okicKfo5R0605THoBK_W2tPu4B_vKmUhBgQiigWRpVkwk7ZCtoi1Eh70KzNTFc8JD2htVMgI925xCslSO5floOuUeXXoyglD1VcV8wymwD6MTRbYXu4pFPkbpnubQWwJD4MJuaIbU8t2r8pER-Ecclds8xIRYbwMgJrr9FwYw42yo0uKevf6zaA32ExveOqhJHqM8V2ENETDsWUgl5u9WobwJPapkM5OQlG2iYNAk",
-  trip: "https://lh3.googleusercontent.com/aida-public/AB6AXuBohiwlVGmwkia7k9cv6O9JgeeAmMsy3m15gV9HgoDrP2SG7Xus3vtyUmQY94ptOCLH-3sVMn_wE7wXDRpH1lV75lWR_etSVogsgIFr8b1xoY0ARZSWoD7BBtW2K0qzqef_df-NPMD2aHHd-X8KyRehT9KV819f-IkOa2kT0p4LqbQY5brBar1MAOukzT6VT75pZ1mMeyxkEX1lWXHCbP_xSgpt_pebzj-1JzSKUT7BH3DmWyyzHmNlpKiwMCdzhiZkl1p8aCukEQ0",
-  geofence:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuDyPZdrsKGcjjj9g8OEx0Stq54KmnCsLinOYdOuMvNUJexIieCJsxaH2Uarwnm0Ix2vsIabb8CqvPaZBGJjkguNaZoiGugYZHjbha7hqL9E4uGTEnYySXYwem2L1FTb-IduAdOl5ot4y9vazl-zBdIVvOplcVip5YIJoInKQuxsyFZCJZQ-cmzBMBWS8XGhde6JZcmh3jP1WBRKtyMWFrX7Or7dO-ZzDcmoP1JoReNmg9Fax_c45qOXIVdcyPgCLpZRNI8UGej43JY",
-  temp: "https://lh3.googleusercontent.com/aida-public/AB6AXuCAn4AENnaE1ueosfUenmmjkmWfQym-ufz9wh2OY2ZTFcETVPuf-FX5TgB_-VtwlaK6Lhr2Yx-keaCqdyGy6nn3-gB32g63-G5kwGGLAgG4-gwE1Mxsp1WTPsW5cYs83BxKPmHIFxcGM_kh8pzErG7KDsCXoFL7NwUQKpva23lt76WMJm6E_A9fviwQhIENQu9_gJZ2pRod48aJsdNZT3zDRBCgbxvHgD_uLw9Uxd2_qPludT9gG40Dc8Y5KXdVc5ffIkE0C2FcI6A",
-  fuel: "https://lh3.googleusercontent.com/aida-public/AB6AXuB6TZXSrB7zcL5EmF-F6Gmwn6W8d4QuJxLA_vdyXFkfzqg7hpmkMul5N_e8l9gEM7LQfX0lHChWtExAyqG6Mf_gWvDXLvkMZwSSqfNiXcnbGRWD89f-3g3yoP108wEueSsgLsyeb1_dVQr7LSgiSTfhhqeT6lDIAXVyNh8o7VmGYFuaLlIknv_Igm-7NhMeyfAEAB_rBBDYlysU-L1i1qXXsT5nZ7gkOfM2-kO3Lk_skn7pXuX-MV7f-dKXFYlaeCa7xnJMTN7c-HQ",
-  notif:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuB6kDA6Ww1EnNC87BoNlz_uYgLEGSwRdkO8helUSzsGsMx6UevJpUa5EZP1klZI6AAJ4Btc0fuEJ6b83kHtpp-lqtiOwRZ2JSXbfDXvGi_S0Zou4S5XpJs2lpeFktQZ6ZVwB1KpoIXvhR5KqlhttvN3E1OYZgaWDRmyE8bgpdjhI2YmKiyyhcc3CH4S1Ql5yfqj1-e4C3BS_6IH1NJiucZljJfR6QSj2MLcytjTxUs4nwk98qxF2yJp9Ca8i0tZAGtJJwX_Q2dzcN0",
-  diag: "https://lh3.googleusercontent.com/aida-public/AB6AXuDIAhOgKsahpODqs2JYdkZR4c-HKi5h-gh7GowVBFAPKdpA737iZN55xve1kvnBXNXQgil4_iYpi5q0E9Nyv2h0WivPcmHOT2c1AnQAxmIedn1m3WizoVDTZ5bfZUpfMvfWwg5GOUwhUMFKwTiDu6qVNyHqveY66EmXzcmi30qrog8FSrCTL_vZtQc6P9_pr3Kag8Ml07SkOMu1mvfvVrQDMKIIsncFEVAj0xaEifPeBX-TrTw4LGQVjCla3_jLdPxNzi5lOAk3IY4",
-  contact:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuCSkrKWQHAHlJVxpn1_iPJZZM-crsrvh73E4H5muXgy77jjumpktXDSNELzHQF7bZyK1DEchhcoHLcxT9D6lXkhoQlxEB9yvnpUjZnM0nbog70I2gLdvfhTzgcg-qmqV6UXIukBPPSrDye4-EmVt9AotKuHGUkN4dFJkqG8yUTRl8lu2acNbP2L5aB9KKy_J6odG76uLL2t98TF2kavMa6QMrkaUrfnW8Npkiumar6QYA4dH8XJM0IBmJzWYqMMdYyg_d2rYDt1FEY",
+  login: LoginImage,
+  map: MapScreenImage,
+  info: MapCardsVehiclesImage,
+  fleet: HomeImage,
+  playback: HistoryImage,
+  trip: ReportTripsImage,
+  geofence: GeofencesImage,
+  temp: ReportTemperatureImage,
+  fuel: ReportSummaryImage,
+  notif: NotificationsImage,
+  diag: VehicleDetailImage,
+  sensor: VehicleSensorsImage,
+  contact: ContactImage,
+};
+
+const DOWNLOAD_URLS = {
+  android: "https://play.google.com/store/apps/details?id=at.andamantracking.dev",
+  ios: "https://apps.apple.com/us/app/%E0%B8%AD-%E0%B8%99%E0%B8%94%E0%B8%B2%E0%B8%A1-%E0%B8%99-%E0%B9%81%E0%B8%97%E0%B8%A3-%E0%B8%84%E0%B8%81-%E0%B8%87/id1513508217#?platform=iphone",
+  lineOa: "https://lin.ee/Yx1EQ1r",
+};
+
+const QRCODE_URLS = {
+  android: `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(
+    DOWNLOAD_URLS.android,
+  )}`,
+  ios: `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(
+    DOWNLOAD_URLS.ios,
+  )}`,
 };
 
 function Icon({ name, className = "" }: { name: string; className?: string }) {
@@ -60,73 +81,28 @@ function Icon({ name, className = "" }: { name: string; className?: string }) {
 }
 
 const drawerLinks = [
-  { icon: "local_shipping", label: "Fleet Overview", active: true },
-  { icon: "history", label: "Playback" },
-  { icon: "assessment", label: "Reports" },
-  { icon: "map", label: "Geofencing" },
-  { icon: "settings", label: "Server Settings" },
+  { icon: "local_shipping", label: "ภาพรวมรถ", active: true },
+  { icon: "history", label: "ย้อนดูเส้นทาง" },
+  { icon: "assessment", label: "รายงาน" },
+  { icon: "map", label: "กำหนดขอบเขต" },
+  { icon: "settings", label: "ตั้งค่าเซิร์ฟเวอร์" },
 ];
 
 function Index() {
-  const [drawerOpen, setDrawerOpen] = useState(false);
-
   return (
     <div className="bg-background text-foreground min-h-screen">
       {/* Top App Bar */}
       <header className="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant h-14 flex justify-between items-center px-4">
         <div className="flex items-center gap-4">
-          <button
-            className="text-primary hover:bg-surface-container rounded-full p-2"
-            onClick={() => setDrawerOpen(true)}
-            aria-label="Open menu"
-          >
-            <Icon name="menu" />
-          </button>
           <h1 className="text-lg font-bold text-primary">Andaman GPS Manual</h1>
         </div>
         <button
           className="text-primary hover:bg-surface-container rounded-full p-2"
-          aria-label="Search"
+          aria-label="ค้นหา"
         >
           <Icon name="search" />
         </button>
       </header>
-
-      {/* Drawer */}
-      <nav
-        className={`fixed inset-y-0 left-0 z-[60] flex flex-col py-4 h-full w-80 bg-surface shadow-xl transition-transform duration-300 ease-in-out ${
-          drawerOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
-      >
-        <div className="px-6 py-4 flex justify-between items-center">
-          <h2 className="text-lg font-bold text-primary">Documentation</h2>
-          <button onClick={() => setDrawerOpen(false)} aria-label="Close menu">
-            <Icon name="close" />
-          </button>
-        </div>
-        <div className="flex flex-col mt-4">
-          {drawerLinks.map((l) => (
-            <a
-              key={l.label}
-              href="#"
-              className={`mx-2 my-1 px-4 py-3 flex items-center gap-4 rounded-full ${
-                l.active
-                  ? "bg-primary-container text-on-primary-container font-semibold"
-                  : "text-on-surface-variant hover:bg-surface-container-high"
-              }`}
-            >
-              <Icon name={l.icon} />
-              <span>{l.label}</span>
-            </a>
-          ))}
-        </div>
-      </nav>
-      {drawerOpen && (
-        <div
-          className="fixed inset-0 bg-black/40 z-[55]"
-          onClick={() => setDrawerOpen(false)}
-        />
-      )}
 
       {/* Main */}
       <main className="pt-20 pb-24 px-4 max-w-screen-xl mx-auto space-y-8">
@@ -137,28 +113,28 @@ function Index() {
               <Icon name="gps_fixed" className="!text-[160px]" />
             </div>
             <h2 className="text-3xl md:text-4xl font-semibold mb-4 tracking-tight">
-              Welcome to Andaman GPS
+              ยินดีต้อนรับสู่ Andaman GPS
             </h2>
             <p className="text-lg opacity-90 max-w-prose">
-              Empowering your logistics with high-precision telematics and
-              institutional-grade fleet management tools.
+              ยกระดับงานโลจิสติกส์ของคุณด้วยระบบเทเลเมติกส์ความแม่นยำสูง
+              และเครื่องมือบริหารจัดการรถระดับองค์กร
             </p>
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 relative">
               {[
                 {
                   icon: "update",
-                  title: "Real-time Tracking",
-                  desc: "Track every movement with second-by-second updates.",
+                  title: "ติดตามแบบเรียลไทม์",
+                  desc: "ติดตามทุกการเคลื่อนไหวแบบอัปเดตต่อเนื่อง",
                 },
                 {
                   icon: "gas_meter",
-                  title: "Fuel Monitoring",
-                  desc: "Highly accurate sensor data to prevent fuel theft.",
+                  title: "ตรวจสอบน้ำมัน",
+                  desc: "อ่านค่าจากเซนเซอร์อย่างแม่นยำเพื่อลดความเสี่ยงทุจริต",
                 },
                 {
                   icon: "psychology",
-                  title: "Driver Behavior",
-                  desc: "Analysis of speeding, braking, and idle times.",
+                  title: "พฤติกรรมผู้ขับขี่",
+                  desc: "วิเคราะห์การใช้ความเร็ว การเบรก และเวลาจอดติดเครื่อง",
                 },
               ].map((f) => (
                 <div key={f.title} className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
@@ -175,40 +151,40 @@ function Index() {
         <section id="getting-started" className="glass-card p-6 rounded-xl space-y-6">
           <div className="flex items-center gap-3 text-primary border-b border-outline-variant pb-4">
             <Icon name="login" />
-            <h2 className="text-xl font-semibold">Getting Started</h2>
+            <h2 className="text-xl font-semibold">เริ่มต้นใช้งาน</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-              <h3 className="font-bold text-lg">How to Login</h3>
+              <h3 className="font-bold text-lg">วิธีเข้าสู่ระบบ</h3>
               <p className="text-on-surface-variant">
-                Follow these steps to access your fleet dashboard:
+                ทำตามขั้นตอนต่อไปนี้เพื่อเข้าใช้งานแดชบอร์ด:
               </p>
               <ol className="list-decimal list-inside space-y-3 text-on-surface-variant ml-2">
-                <li>Open the Andaman GPS mobile app.</li>
+                <li>เปิดแอป Andaman GPS บนมือถือ</li>
                 <li>
-                  <strong>Server Selection:</strong> Choose the assigned server for your
-                  region (server1, server2, or server3).
+                  <strong>เลือกเซิร์ฟเวอร์:</strong> เลือกเซิร์ฟเวอร์ที่ได้รับมอบหมาย
+                  (server1, server2 หรือ server3)
                 </li>
                 <li>
-                  Enter your unique <strong>Account ID</strong>.
+                  กรอก <strong>Account Name</strong> ของคุณ
                 </li>
                 <li>
-                  Enter your <strong>Username</strong> and <strong>Password</strong>.
+                  กรอก <strong>Username</strong> และ <strong>Password</strong>
                 </li>
-                <li>Tap 'Sign In' to proceed to the map overview.</li>
+                <li>แตะ "Sign In" เพื่อเข้าสู่หน้าภาพรวมรายการรถ</li>
               </ol>
               <div className="bg-secondary-fixed text-on-secondary-fixed p-4 rounded-lg border-l-4 border-secondary flex gap-4">
                 <Icon name="error" className="shrink-0" />
                 <p className="text-sm">
-                  Ensure you have selected the correct server provided in your onboarding
-                  email, or login will fail.
+                  กรุณาเลือกเซิร์ฟเวอร์ให้ถูกต้อง  มิฉะนั้นอาจไม่
+                  สามารถเข้าสู่ระบบได้
                 </p>
               </div>
             </div>
             <div className="rounded-xl overflow-hidden shadow-xl border border-outline-variant">
               <img
                 src={IMG.login}
-                alt="Login screen of Andaman GPS"
+                alt="หน้าจอเข้าสู่ระบบ Andaman GPS"
                 className="w-full object-cover aspect-[0.45]"
               />
             </div>
@@ -218,9 +194,9 @@ function Index() {
         {/* Features */}
         <section id="features" className="space-y-8">
           <div className="text-center">
-            <h2 className="text-2xl font-semibold text-primary">Key Platform Features</h2>
+            <h2 className="text-2xl font-semibold text-primary">ฟีเจอร์หลักของแพลตฟอร์ม</h2>
             <p className="text-on-surface-variant">
-              Master the tools designed for fleet optimization.
+              ใช้งานเครื่องมือสำคัญเพื่อเพิ่มประสิทธิภาพการจัดการรถ
             </p>
           </div>
 
@@ -229,42 +205,44 @@ function Index() {
               <div>
                 <div className="flex items-center gap-2 mb-4 text-primary">
                   <Icon name="location_on" />
-                  <h3 className="font-bold">Real-time Tracking &amp; Map</h3>
+                  <h3 className="font-bold">ติดตามสดและแผนที่</h3>
                 </div>
                 <p className="text-on-surface-variant mb-6">
-                  View your entire fleet live on high-resolution maps. Monitor speed,
-                  direction, and engine status in one unified view.
+                  ดูตำแหน่งรถทั้งหมดแบบสดบนแผนที่ความละเอียดสูง พร้อมตรวจสอบความเร็ว
+                  ทิศทาง และสถานะเครื่องยนต์ในหน้าเดียว
                 </p>
               </div>
               <div className="flex gap-4">
                 <img
                   src={IMG.map}
-                  alt="Map interface"
+                  alt="หน้าจอแผนที่"
                   className="w-1/2 rounded-lg border border-outline-variant shadow-md"
                 />
                 <img
                   src={IMG.info}
-                  alt="Vehicle info panel"
+                  alt="แผงข้อมูลรถ"
                   className="w-1/2 rounded-lg border border-outline-variant shadow-md"
                 />
               </div>
             </div>
-            <div className="glass-card p-6 rounded-xl flex flex-col justify-between">
+            <div className="glass-card p-6 rounded-xl flex flex-col h-full" >
               <div>
                 <div className="flex items-center gap-2 mb-4 text-primary">
                   <Icon name="dashboard" />
-                  <h3 className="font-bold">Fleet Overview</h3>
+                  <h3 className="font-bold">ภาพรวมยานพาหนะ</h3>
                 </div>
                 <p className="text-on-surface-variant mb-6">
-                  Get a bird's-eye view of your assets. Quickly filter by 'Online',
-                  'Offline', or 'Idle' statuses to identify operational gaps immediately.
+                  ดูภาพรวมทรัพย์สินทั้งหมด และคัดกรองสถานะ Online, Offline หรือ Idle
+                  เพื่อระบุจุดที่ต้องจัดการได้ทันที
                 </p>
               </div>
-              <img
-                src={IMG.fleet}
-                alt="Fleet overview list"
-                className="w-full h-48 object-cover object-top rounded-lg border border-outline-variant shadow-md"
-              />
+              <div className="flex-1 min-h-0">
+                <img
+                  src={IMG.fleet}
+                  alt="หน้ารายการภาพรวมรถ" style={{ aspectRatio: "4 / 4" }}
+                  className="w-full  object-cover object-top rounded-lg border border-outline-variant shadow-md"
+                />
+              </div>
             </div>
           </div>
 
@@ -272,26 +250,26 @@ function Index() {
           <div className="glass-card p-8 rounded-xl">
             <div className="flex items-center gap-3 mb-6">
               <Icon name="play_circle" className="text-secondary" />
-              <h3 className="text-xl font-semibold">Playback (History)</h3>
+              <h3 className="text-xl font-semibold">ย้อนดูเส้นทาง (Playback)</h3>
             </div>
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/3">
                 <img
                   src={IMG.playback}
-                  alt="Playback screen"
+                  alt="หน้าจอย้อนดูเส้นทาง"
                   className="w-full rounded-xl shadow-lg border border-outline-variant"
                 />
               </div>
               <div className="md:w-2/3 space-y-4">
                 <p className="text-lg">
-                  The playback feature allows you to audit routes taken on specific dates
-                  and times. It provides a visual breadcrumb trail of vehicle history.
+                  ฟีเจอร์ Playback ช่วยให้คุณตรวจสอบเส้นทางย้อนหลังตามวันและเวลา
+                  ที่ต้องการ พร้อมแสดงเส้นทางการเดินรถอย่างชัดเจน
                 </p>
                 <ul className="zebra-stripes rounded-lg overflow-hidden border border-outline-variant">
                   {[
-                    { icon: "calendar_today", text: "Select specific date and time ranges." },
-                    { icon: "speed", text: "Adjust playback speed (1x to 10x)." },
-                    { icon: "stop", text: "Visualize stop durations and locations." },
+                    { icon: "calendar_today", text: "เลือกช่วงวันที่และเวลาได้ละเอียด" },
+                    { icon: "speed", text: "ปรับความเร็วการเล่นย้อนหลังได้ (1x ถึง 10x)" },
+                    { icon: "stop", text: "ดูจุดจอดและระยะเวลาจอดได้ทันที" },
                   ].map((r) => (
                     <div key={r.text} className="p-3 flex items-center gap-3">
                       <Icon name={r.icon} className="text-primary" />
@@ -306,14 +284,14 @@ function Index() {
           {/* Reports */}
           <div className="bg-surface-container p-6 rounded-xl">
             <h3 className="text-xl font-semibold text-primary mb-6 flex items-center gap-3">
-              <Icon name="analytics" /> Detailed Reporting
+              <Icon name="analytics" /> รายงานเชิงลึก
             </h3>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { img: IMG.trip, label: "Trip Report" },
-                { img: IMG.geofence, label: "Geofence Report" },
-                { img: IMG.temp, label: "Temperature Log" },
-                { img: IMG.fuel, label: "Fuel Report" },
+                { img: IMG.trip, label: "รายงานการเดินทาง" },
+                { img: IMG.geofence, label: "รายงานพื้นที่ควบคุม" },
+                { img: IMG.temp, label: "บันทึกอุณหภูมิ" },
+                { img: IMG.fuel, label: "รายงานน้ำมัน" },
               ].map((r) => (
                 <div key={r.label} className="space-y-2">
                   <img
@@ -332,16 +310,43 @@ function Index() {
           {/* Notifications */}
           <div className="glass-card p-6 rounded-xl flex items-start gap-6 border-l-4 border-primary">
             <div className="hidden md:block w-32 shrink-0">
-              <img src={IMG.notif} alt="Notifications" className="rounded-lg shadow" />
+              <img src={IMG.notif} alt="การแจ้งเตือน" className="rounded-lg shadow" />
             </div>
             <div>
               <h3 className="font-bold text-primary mb-2 flex items-center gap-2">
-                <Icon name="notifications_active" /> Real-time Notifications
+                <Icon name="notifications_active" /> การแจ้งเตือนแบบเรียลไทม์
               </h3>
               <p className="text-on-surface-variant">
-                Stay informed without opening the app. Configure push notifications for
-                critical events like speeding, idling, or entering unauthorized zones.
+                รับรู้เหตุการณ์สำคัญได้ทันทีโดยไม่ต้องเปิดแอป พร้อมตั้งค่า push
+                notification สำหรับเหตุการณ์เช่น ขับเร็วเกินกำหนด จอดติดเครื่องนาน
+                หรือเข้าออกพื้นที่ที่กำหนด
               </p>
+            </div>
+          </div>
+
+          {/* Sensor Monitoring */}
+          <div id="sensor" className="glass-card p-6 rounded-xl space-y-6">
+            <div className="flex items-center gap-3 text-primary">
+              <Icon name="sensors" />
+              <h3 className="text-xl font-semibold">การติดตามเซนเซอร์</h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <div className="space-y-3 text-on-surface-variant">
+                <p>
+                  ตรวจสอบค่าสัญญาณจากตัวรถแบบละเอียดผ่านหน้าจอ Sensor เพื่อติดตาม
+                  สถานะการทำงานแบบเรียลไทม์และวิเคราะห์ปัญหาได้เร็วขึ้น
+                </p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>แสดงค่าจากเซนเซอร์หลักของอุปกรณ์ติดตาม</li>
+                  <li>ช่วยยืนยันสาเหตุเมื่อรถ Offline หรือข้อมูลผิดปกติ</li>
+                  <li>ใช้ร่วมกับข้อมูลตำแหน่งและประวัติการวิ่งเพื่อวิเคราะห์เชิงลึก</li>
+                </ul>
+              </div>
+              <img
+                src={IMG.sensor}
+                alt="หน้าจอเซนเซอร์ของรถ"
+                className="w-full rounded-xl border border-outline-variant shadow-lg"
+              />
             </div>
           </div>
         </section>
@@ -350,20 +355,19 @@ function Index() {
         <section id="troubleshooting" className="glass-card p-6 rounded-xl space-y-6">
           <div className="flex items-center gap-3 text-secondary border-b border-outline-variant pb-4">
             <Icon name="build" />
-            <h2 className="text-xl font-semibold">Troubleshooting</h2>
+            <h2 className="text-xl font-semibold">การแก้ปัญหาเบื้องต้น</h2>
           </div>
           <div className="flex flex-col md:flex-row gap-6">
             <div className="md:w-1/2 space-y-4">
               <p className="text-on-surface-variant">
-                If a vehicle appears offline or data seems incorrect, check the{" "}
-                <strong>Status Information</strong> panel. Monitor these three critical
-                sensors:
+                หากรถแสดงสถานะ Offline หรือข้อมูลไม่ถูกต้อง ให้ตรวจสอบที่แผง{" "}
+                <strong>Status Information</strong> และเฝ้าดู 3 ค่าสำคัญดังนี้:
               </p>
               <div className="space-y-2">
                 {[
-                  ["GSM Signal", "Cellular connection status"],
-                  ["Satellite Count", "GPS positional accuracy"],
-                  ["Fuel Sensor", "Current tank volume (L)"],
+                  ["สัญญาณ GSM", "สถานะการเชื่อมต่อเครือข่ายมือถือ"],
+                  ["จำนวนดาวเทียม", "ความแม่นยำของตำแหน่ง GPS"],
+                  ["เซนเซอร์น้ำมัน", "ปริมาณน้ำมันในถังปัจจุบัน (ลิตร)"],
                 ].map(([name, desc]) => (
                   <div
                     key={name}
@@ -378,7 +382,7 @@ function Index() {
             <div className="md:w-1/2">
               <img
                 src={IMG.diag}
-                alt="Diagnostic status"
+                alt="สถานะการวินิจฉัยอุปกรณ์"
                 className="rounded-xl border border-outline-variant shadow-lg"
               />
             </div>
@@ -391,21 +395,95 @@ function Index() {
           className="bg-surface-container-highest p-8 rounded-xl text-center space-y-6"
         >
           <Icon name="contact_support" className="!text-4xl text-primary" />
-          <h2 className="text-2xl font-semibold text-primary">Need Assistance?</h2>
+          <h2 className="text-2xl font-semibold text-primary">ต้องการความช่วยเหลือ?</h2>
           <p className="text-on-surface-variant max-w-xl mx-auto">
-            Our technical support team is available 24/7 to help you with installation,
-            configuration, or any technical queries.
+            ทีมซัพพอร์ตของเราพร้อมให้บริการตลอด 24 ชั่วโมง สำหรับการติดตั้ง
+            การตั้งค่า และคำถามด้านเทคนิคทุกประเภท
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            <img src={IMG.contact} alt="Contact form" className="w-48 rounded-lg shadow-xl" />
+            <img src={IMG.contact} alt="แบบฟอร์มติดต่อ" className="w-48 rounded-lg shadow-xl" />
             <div className="text-left space-y-4">
               <button className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-bold w-full md:w-auto hover:opacity-80 transition-opacity">
-                Open Contact Form
+                เปิดแบบฟอร์มติดต่อ
               </button>
               <p className="text-sm text-on-surface-variant italic">
-                Direct Email: support@andamangps.com
+                อีเมลโดยตรง: support@andamangps.com
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Download */}
+        <section id="download" className="glass-card p-6 rounded-xl space-y-6">
+          <div className="flex items-center gap-3 text-primary border-b border-outline-variant pb-4">
+            <Icon name="download" />
+            <h2 className="text-xl font-semibold">ดาวน์โหลดแอปพลิเคชัน</h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <article className="   border-r-1 border-outline-variant overflow-hidden">
+              <div className="   px-4 py-3 flex items-center justify-between">
+                <div className="flex items-center gap-2 font-semibold">
+                  <img src={PlayStoreLogo} alt="Play Store" className="w-5 h-5 object-contain" />
+                  Android
+                </div>
+                <span className="text-xs font-bold tracking-wide uppercase">Google Play</span>
+              </div>
+              <div className="p-5 text-center space-y-4">
+                <p className="text-sm text-on-surface-variant">สแกน QR เพื่อติดตั้งบนมือถือ Android</p>
+                <img
+                  src={QRCODE_URLS.android}
+                  alt="QR Code ดาวน์โหลดแอป Android"
+                  className="mx-auto w-44 h-44 rounded-lg   border-outline-variant bg-white p-2"
+                />
+                <a
+                  href={DOWNLOAD_URLS.android}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-full  px-5 py-2 font-semibold hover:opacity-90 transition-opacity"
+                >
+                  ดาวน์โหลด Android
+                </a>
+              </div>
+            </article>
+
+            <article className="  rounded-xl   border-outline-variant overflow-hidden">
+              <div className="px-4 py-3 flex items-center justify-between">
+                <div className="flex items-center gap-2 font-semibold">
+                  <img src={AppleLogo} alt="Apple" className="w-5 h-5 object-contain" /> iOS
+                </div>
+                <span className="text-xs font-bold tracking-wide uppercase">App Store</span>
+              </div>
+              <div className="p-5 text-center space-y-4">
+                <p className="text-sm text-on-surface-variant">สแกน QR เพื่อติดตั้งบน iPhone</p>
+                <img
+                  src={QRCODE_URLS.ios}
+                  alt="QR Code ดาวน์โหลดแอป iOS"
+                  className="mx-auto w-44 h-44 rounded-lg   border-outline-variant bg-white p-2"
+                />
+                <a
+                  href={DOWNLOAD_URLS.ios}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-full  px-5 py-2 font-semibold hover:opacity-90 transition-opacity"
+                >
+                  ดาวน์โหลด iOS
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div className=" p-4 rounded-xl   border-outline-variant space-y-4">
+            {/* <h3 className="font-semibold text-lg text-primary flex items-center gap-2">
+              <Icon name="chat" /> เพิ่มเพื่อน Line OA
+            </h3> */}
+            <a href={DOWNLOAD_URLS.lineOa} target="_blank" rel="noreferrer" className="block">
+              <img
+                src={AddLineOaBanner}
+                alt="แบนเนอร์เพิ่มเพื่อน Line OA"
+                className="w-full  border border-outline-variant shadow"
+              />
+            </a> 
           </div>
         </section>
       </main>
@@ -413,10 +491,10 @@ function Index() {
       {/* Bottom Nav */}
       <nav className="fixed bottom-0 w-full z-50 bg-surface-container-lowest border-t border-outline-variant shadow-lg h-16 flex justify-around items-center rounded-t-xl md:hidden">
         {[
-          { href: "#intro", icon: "info", label: "Intro", active: true },
-          { href: "#features", icon: "gps_fixed", label: "Features" },
-          { href: "#support", icon: "help_outline", label: "Support" },
-          { href: "#troubleshooting", icon: "notifications", label: "Alerts" },
+          { href: "#intro", icon: "info", label: "แนะนำ", active: true },
+          { href: "#features", icon: "gps_fixed", label: "ฟีเจอร์" },
+          { href: "#support", icon: "help_outline", label: "ช่วยเหลือ" },
+          { href: "#troubleshooting", icon: "notifications", label: "แจ้งเตือน" },
         ].map((n) => (
           <a
             key={n.label}
