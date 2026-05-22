@@ -7,6 +7,7 @@ import GeofencesImage from "../images/screen/Geofences.png";
 import HistoryImage from "../images/screen/History.png";
 import HomeImage from "../images/screen/Home.png";
 import LoginImage from "../images/screen/Login.png";
+import WebIcon from "../assets/images/icon.svg";
 import MapCardsVehiclesImage from "../images/screen/Map_Cards_Vehicles.png";
 import MapScreenImage from "../images/screen/Map_Screen.png";
 import NotificationsImage from "../images/screen/Notifications.png";
@@ -32,6 +33,15 @@ export const Route = createFileRoute("/")({
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
+      },
+      {
+        rel: "icon",
+        type: "image/svg+xml",
+        href: WebIcon,
+      },
+      {
+        rel: "shortcut icon",
+        href: WebIcon,
       },
     ],
   }),
@@ -69,6 +79,10 @@ const QRCODE_URLS = {
   )}`,
 };
 
+const VERSION_URLS = {
+  older: "https://drive.google.com/file/d/15SlHX92x7Zg7zsaH8XWBiseMej3jLEik/view",
+};
+
 function Icon({ name, className = "" }: { name: string; className?: string }) {
   return (
     <span
@@ -80,14 +94,6 @@ function Icon({ name, className = "" }: { name: string; className?: string }) {
   );
 }
 
-const drawerLinks = [
-  { icon: "local_shipping", label: "ภาพรวมรถ", active: true },
-  { icon: "history", label: "ย้อนดูเส้นทาง" },
-  { icon: "assessment", label: "รายงาน" },
-  { icon: "map", label: "กำหนดขอบเขต" },
-  { icon: "settings", label: "ตั้งค่าเซิร์ฟเวอร์" },
-];
-
 function Index() {
   return (
     <div className="bg-background text-foreground min-h-screen">
@@ -96,12 +102,19 @@ function Index() {
         <div className="flex items-center gap-4">
           <h1 className="text-lg font-bold text-primary">Andaman GPS Manual</h1>
         </div>
-        <button
-          className="text-primary hover:bg-surface-container rounded-full p-2"
-          aria-label="ค้นหา"
+        <select
+          defaultValue="current"
+          aria-label="เลือกเวอร์ชันคู่มือ"
+          className="h-9 rounded-md border border-outline-variant bg-surface px-3 text-sm text-primary focus:outline-none focus:ring-2 focus:ring-primary/40"
+          onChange={(event) => {
+            if (event.target.value !== "current") {
+              window.open(VERSION_URLS.older, "_blank", "noopener,noreferrer");
+            }
+          }}
         >
-          <Icon name="search" />
-        </button>
+          <option value="older">v2.2.07</option>
+          <option value="current">v2.2.23 (current)</option>
+        </select>
       </header>
 
       {/* Main */}
